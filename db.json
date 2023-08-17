@@ -1,0 +1,226 @@
+{
+  "category": [
+    {
+      "categoryName": "Bracelet",
+      "description": "Feng Shui Black Obsidian Wealth Bracelet",
+      "imageURL": "https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/67/422854/1.jpg?4160",
+      "id": 1
+    },
+    {
+      "categoryName": "Easy Slide",
+      "description": "ADIDAS Adilette Aqua Slides Unisex",
+      "imageURL": "https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/61/2000961/1.jpg?6571",
+      "id": 2
+    },
+    {
+      "categoryName": "Sneakers",
+      "description": "2022 Men Casual Classic Running Sneakers - White",
+      "imageURL": "https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/93/763176/1.jpg?8276",
+      "id": 3
+    },
+    {
+      "categoryName": "Watches",
+      "description": "Et ratione aspernatu",
+      "imageURL": "https://ng.jumia.is/cms/0-1-homepage/0-0-freelinks-gray/300x240/watches_300x240.png",
+      "id": 4
+    },
+    {
+      "categoryName": "Polos Shirts",
+      "description": "Mens Office Polos Shirts Casual Joggers Tshirt Top-Navyblue",
+      "imageURL": "https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/95/058766/1.jpg?1693",
+      "id": 5
+    },
+    {
+      "categoryName": "Zipper Comfort Hoodie",
+      "description": "Men's Trendy Zipper Comfort Hoodie Varsity Jacket Sweatshirts - White",
+      "imageURL": "https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/94/933353/1.jpg?0447",
+      "id": 6
+    },
+    {
+      "categoryName": "Earbud",
+      "description": "Oraimo Riff Smaller For Comfort TWS True Wireless Earbud",
+      "imageURL": "https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/71/373998/1.jpg?0975",
+      "id": 7
+    },
+    {
+      "categoryName": "itel",
+      "description": "itel S23 6.6\", 128GB ROM + Up To 8GB RAM, 50MP Camera, 5000mAh",
+      "imageURL": "https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/26/1974642/1.jpg?9467",
+      "id": 8
+    },
+    {
+      "categoryName": "Laptops",
+      "imageURL": "https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/16/3854642/1.jpg?0708",
+      "description": "Asus Vivobook 14 - Intel Celeron - 4GB/256GB SSD - Win 11 - Blue",
+      "id": 9
+    }
+  ],
+  "products": [
+    {
+      "categoryId": 3,
+      "id": 1,
+      "name": "Sneakers",
+      "imageURL": "https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/93/763176/1.jpg?8276",
+      "price": 100,
+      "description": "2022 Men Casual Classic Running Sneakers - White"
+    },
+    {
+      "categoryId": 4,
+      "id": 2,
+      "name": " Metal Digital Lava",
+      "imageURL": "https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/14/761224/1.jpg?0875",
+      "price": 70,
+      "description": "Luxury Black Full Metal Digital Lava Wrist Watch- Unisex"
+    },
+    {
+      "categoryId": 2,
+      "id": 3,
+      "name": "Shoe Amazing",
+      "imageURL": "https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/61/2000961/1.jpg?6571",
+      "price": 896,
+      "description": "Sapiente asd reprehen"
+    },
+    {
+      "categoryId": 5,
+      "description": "KITON GREEN SHIRT - SLIM",
+      "name": "KITON ",
+      "imageURL": "https://www.shopthefinest.com/cdn/shop/products/KT-M-UCID-H5251-08-EE-R1-2_medium.jpg?v=1661865090",
+      "price": 720,
+      "id": 4
+    },
+    {
+      "categoryId": 5,
+      "description": "Custom Design Hawaiian Shirts Hawaiian Shirt with Your Face with Flower",
+      "name": "Nostrum nostrum duis",
+      "imageURL": "https://customyoulike.com/cdn/shop/products/CCH11-01-01_1_1296x1296.png?v=1652079015",
+      "price": 580,
+      "id": 5
+    },
+    {
+      "categoryId": 9,
+      "description": "Explicabo Pariatur Laptop",
+      "name": "Unde sunt assumenda",
+      "imageURL": "https://ng.jumia.is/cms/0-1-homepage/0-0-freelinks-gray/300x240/generic_300x240.jpg",
+      "price": 390,
+      "id": 6
+    },
+    {
+      "categoryId": 8,
+      "description": "Quis deserunt porro ",
+      "name": "Accusantium soluta c",
+      "imageURL": "https://ng.jumia.is/cms/0-1-homepage/0-0-freelinks-gray/300x240/phones-tablets_300x240.png",
+      "price": 400,
+      "id": 7
+    },
+    {
+      "categoryId": 4,
+      "description": "Digital Watch - LED Watch - Electronic Sports Watch",
+      "name": "Apple LED Watch",
+      "imageURL": "https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/61/414717/1.jpg?2241",
+      "price": 425,
+      "id": 8
+    }
+  ],
+  "signup": [
+    {
+      "email": "hetiv@mailinator.com",
+      "firstName": "Iliana",
+      "lastName": "Wade",
+      "password": "Pa$$w0rd!",
+      "confirmPassword": "Pa$$w0rd!",
+      "id": 1
+    },
+    {
+      "email": "hoga@mailinator.com",
+      "firstName": "Shafira",
+      "lastName": "Wilkinson",
+      "password": "Pa$$w0rd!",
+      "confirmPassword": "Pa$$w0rd!",
+      "id": 2
+    },
+    {
+      "email": "rutyvyja@mailinator.com",
+      "firstName": "Erich",
+      "lastName": "Foreman",
+      "password": "Pa$$w0rd!",
+      "confirmPassword": "Pa$$w0rd!",
+      "id": 3
+    },
+    {
+      "email": "tilymu@mailinator.com",
+      "firstName": "Clinton",
+      "lastName": "Gutierrez",
+      "password": "Pa$$w0rd!",
+      "confirmPassword": "Pa$$w0rd!",
+      "id": 4
+    }
+  ],
+  "user": [
+    {
+      "email": "test@gmail.com",
+      "firstName": "hey",
+      "lastName": "there",
+      "password": "12345",
+      "confirmPassword": "12345",
+      "id": 1
+    },
+    {
+      "email": "bahib@mailinator.com",
+      "firstName": "Aut ut et unde est c",
+      "lastName": "Quo omnis duis sint ",
+      "password": "Pa$$w0rd!",
+      "confirmPassword": "Pa$$w0rd!",
+      "id": 2
+    },
+    {
+      "email": "gawi@mailinator.com",
+      "firstName": "Ullam et aut aut dol",
+      "lastName": "Cumque aspernatur re",
+      "password": "Pa$$w0rd!",
+      "confirmPassword": "Pa$$w0rd!",
+      "id": 3
+    }
+  ],
+  "cart": [
+    {
+      "userId": 30,
+      "categoryId": 5,
+      "description": "Custom Design Hawaiian Shirts Hawaiian Shirt with Your Face with Flower",
+      "quantity": 1,
+      "name": "Nostrum nostrum duis",
+      "imageURL": "https://customyoulike.com/cdn/shop/products/CCH11-01-01_1_1296x1296.png?v=1652079015",
+      "price": 580,
+      "id": 1
+    },
+    {
+      "userId": 58,
+      "categoryId": 5,
+      "description": "Custom Design Hawaiian Shirts Hawaiian Shirt with Your Face with Flower",
+      "quantity": 1,
+      "name": "Nostrum nostrum duis",
+      "imageURL": "https://customyoulike.com/cdn/shop/products/CCH11-01-01_1_1296x1296.png?v=1652079015",
+      "price": 580,
+      "id": 2
+    },
+    {
+      "userId": 58,
+      "categoryId": 5,
+      "description": "KITON GREEN SHIRT - SLIM",
+      "quantity": 1,
+      "name": "KITON ",
+      "imageURL": "https://www.shopthefinest.com/cdn/shop/products/KT-M-UCID-H5251-08-EE-R1-2_medium.jpg?v=1661865090",
+      "price": 720,
+      "id": 3
+    },
+    {
+      "userId": 58,
+      "categoryId": 4,
+      "description": "Luxury Black Full Metal Digital Lava Wrist Watch- Unisex",
+      "quantity": 3,
+      "name": " Metal Digital Lava",
+      "imageURL": "https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/14/761224/1.jpg?0875",
+      "price": 70,
+      "id": 4
+    }
+  ]
+}
