@@ -1,5 +1,5 @@
 <template>
-  <navbar :cartCount="cartCount" />
+  <navbar :cartCount="cartCount"/>
   <router-view v-if="categories && products" style="min-height: 60vh;" :baseURL="baseURL" :categories="categories"
     :products="products" @fetchData="fetchData" />
   <myFooter />

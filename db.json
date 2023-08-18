@@ -21,7 +21,7 @@
     {
       "categoryName": "Watches",
       "description": "Et ratione aspernatu",
-      "imageURL": "https://ng.jumia.is/cms/0-1-homepage/0-0-freelinks-gray/300x240/watches_300x240.png",
+      "imageURL": "https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/00/021574/1.jpg?4409",
       "id": 4
     },
     {
@@ -221,6 +221,28 @@
       "imageURL": "https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/14/761224/1.jpg?0875",
       "price": 70,
       "id": 4
+    }
+  ],
+  "wishlist": [
+    {
+      "userId": 58,
+      "categoryId": 4,
+      "description": "Luxury Black Full Metal Digital Lava Wrist Watch- Unisex",
+      "quantity": 1,
+      "name": " Metal Digital Lava",
+      "imageURL": "https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/14/761224/1.jpg?0875",
+      "price": 70,
+      "id": 1
+    },
+    {
+      "userId": 58,
+      "categoryId": 5,
+      "description": "KITON GREEN SHIRT - SLIM",
+      "quantity": 3,
+      "name": "KITON ",
+      "imageURL": "https://www.shopthefinest.com/cdn/shop/products/KT-M-UCID-H5251-08-EE-R1-2_medium.jpg?v=1661865090",
+      "price": 720,
+      "id": 2
     }
   ]
 }

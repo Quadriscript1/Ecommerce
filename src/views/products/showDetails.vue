@@ -54,45 +54,71 @@ export default {
         return {
             product: {},
             category: {},
-            quantity:1,
-            wishListString:'Add to wishlist',
-            auth_info:{}
+            quantity: 1,
+            wishListString: 'Add to wishlist',
+            auth_info: {}
 
         }
     },
     props: ['baseURL', 'products', 'categories'],
-    methods:{
-        addToCart(){
-        if(!this.auth_info){
-            alert('Please login to access this cart');
-            return this.$router.push('/signin')
+    methods: {
+        addToCart() {
+            if (!this.auth_info) {
+                alert('Please login to access this cart');
+                return this.$router.push('/signin')
 
-        }else{
-            const cart ={
-                userId:this.auth_info.id,
-                categoryId : this.product.categoryId,
-                description :this.product.description,
-                quantity:this.quantity,
-                name: this.product.name,
-                imageURL: this.product.imageURL,
-                price:this.product.price
-            }
-            axios.post(this.baseURL+'cart',cart)
-            .then((res) => {
-                if(res.status == 201) {
-                    swal({
-                        text:"product added to the cart successfully",
-                        icon:"success",
-                    })
-                    console.log(this.auth_info);
+            } else {
+                const cart = {
+                    userId: this.auth_info.id,
+                    categoryId: this.product.categoryId,
+                    description: this.product.description,
+                    quantity: this.quantity,
+                    name: this.product.name,
+                    imageURL: this.product.imageURL,
+                    price: this.product.price
                 }
-            })
-        }
-           
+                axios.post(this.baseURL + 'cart', cart)
+                    .then((res) => {
+                        if (res.status == 201) {
+                            swal({
+                                text: "product added to the cart successfully",
+                                icon: "success",
+                            })
+                            console.log(this.auth_info);
+                            return this.$router.push('/Wishlist')
+                        }
+                    })
+            }
+
+        },
+        addToWishlist() {
+            if (this.auth_info) {
+                const wishlist ={
+                    userId: this.auth_info.id,
+                    categoryId: this.product.categoryId,
+                    description: this.product.description,
+                    quantity: this.quantity,
+                    name: this.product.name,
+                    imageURL: this.product.imageURL,
+                    price: this.product.price
+                }
+                axios.post(this.baseURL+"wishlist", wishlist)
+                .then(
+                    res => {
+                    if (res.status == 201) {
+                            swal({
+                                text: "Wishlist added successfully",
+                                icon: "success",
+                            })
+                            console.log(this.auth_info);
+                        }
+                    }
+                )
+            }
         }
     },
     mounted() {
-        this.auth_info = JSON.parse( localStorage.getItem('authUser'));
+        this.auth_info = JSON.parse(localStorage.getItem('authUser'));
         this.id = this.$route.params.id;
         this.product = this.products.find(product => product.id == this.id)
         this.category = this.categories.find(category => category.id == this.product.categoryId)
@@ -101,13 +127,14 @@ export default {
 </script>
 
 <style>
-    .category{
-        font-weight: 400;
-    }
-    #wishlist-button{
-        background-color: #b9b9b9;
-    }
-    #add-to-cart-button{
-        background-color: #febd69;
-    }
-</style>
+.category {
+    font-weight: 400;
+}
+
+#wishlist-button {
+    background-color: #b9b9b9;
+}
+
+#add-to-cart-button {
+    background-color: #febd69;
+}</style>

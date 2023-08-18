@@ -13,19 +13,26 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <form class="form-inline ml-auto mr-auto">
         <div class="input-group">
-          <input type="text" size="100" class="form-control" placeholder="search items.." aria-label="Username"
-            aria-describedby="basic-addon1">
+          <input type="search" size="100" class="form-control" @keyup="filteredProducts" placeholder="search items.."
+            aria-label="Username" aria-describedby="basic-addon1" v-model="search"
+            >
           <div class="input-group-prepend">
             <span class="input-group-text" id="search-button-navbar">
               <i class="bi bi-search"></i>
             </span>
           </div>
+          <!-- <ul>
+            <li v-for="product in filteredproducts" :key="product.id">
+              {{ product.name }}
+            </li>
+          </ul> -->
         </div>
       </form>
+
       <ul class="navbar-nav ml-auto">
         <li class="nav-item dropdown">
-          <a class="nav-link text-light dropdown-toggle" href="#" id="navbarAccount" role="button" data-bs-toggle="dropdown"
-            aria-expanded="false">
+          <a class="nav-link text-light dropdown-toggle" href="#" id="navbarAccount" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false">
             Browse
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarAccount">
@@ -36,14 +43,14 @@
 
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link text-light dropdown-toggle" href="#" id="navbarAccount" role="button" data-bs-toggle="dropdown"
-            aria-expanded="false">
+          <a class="nav-link text-light dropdown-toggle" href="#" id="navbarAccount" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false">
             Account
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarAccount">
-            <!-- <router-link :to="{ name: 'Wishlist' }" class="dropdown-item">wishlist</router-link> -->
-             <router-link v-if="isLoggedIn" :to="{ name: 'Admin' }" class="dropdown-item">Admin</router-link>
-            <router-link v-if="!isLoggedIn"  :to="{ name: 'Signup' }" class="dropdown-item">Sign Up</router-link>
+            <router-link v-if="isLoggedIn" :to="{ name: 'Wishlist' }" class="dropdown-item">wishlist</router-link>
+            <router-link v-if="isLoggedIn" :to="{ name: 'Admin' }" class="dropdown-item">Admin</router-link>
+            <router-link v-if="!isLoggedIn" :to="{ name: 'Signup' }" class="dropdown-item">Sign Up</router-link>
             <router-link v-if="!isLoggedIn" :to="{ name: 'Signin' }" class="dropdown-item">Sign In</router-link>
             <a href="#" v-if="isLoggedIn" @click="signout" class="dropdown-item">Signout</a>
           </div>
@@ -53,36 +60,61 @@
           <div id="cart" style="position: relative;">
             <span id="nav-cart-count">{{ cartCount }}</span>
             <router-link :to="{ name: 'Cart' }" class="text-light">
-            <i class="fa fa-shopping-cart" style="font-size: 36px;"></i>
-          </router-link>
+              <i class="fa fa-shopping-cart" style="font-size: 36px;"></i>
+            </router-link>
           </div>
-          
-
         </li>
       </ul>
-
-
+  
     </div>
   </nav>
 </template>
 
 <script>
+import axios from "axios"
+
 export default {
+  data() {
+    return {
+      products: [],
+      categories: [],
+      search: '',
+      filteredproducts: []
+    }
+  },
   props:['cartCount'],
-  computed:{
-    isLoggedIn(){
+  computed: {
+    isLoggedIn() {
       var check = localStorage.getItem('authUser')
       if (check) {
         return true;
       }
       return false;
-    }
+    },
+
   },
-  methods:{
-    signout(){
+  methods: {
+    fetchData() {
+      axios.get("http://localhost:3000/products")
+        .then(res => {
+          this.products = res.data
+        }).catch(err => { console.log('err', err); });
+    },
+    signout() {
       localStorage.removeItem('authUser');
       this.$router.push("/")
-    }
+    },
+    filteredProducts() {
+      this.filteredproducts = this.products.filter((product) =>
+        product.name.toLowerCase().match(this.search.toLowerCase())
+      );
+      console.log(this.filteredproducts);
+    },
+  },
+
+  mounted() {
+    this.fetchData();
+    this.filteredProducts()
   }
 
 }
@@ -96,15 +128,18 @@ export default {
 .nav-link {
   color: #fff;
 }
+
 .dropdown-item {
   color: black;
 }
-#search-button-navbar{
+
+#search-button-navbar {
   background-color: #febd69;
   border-color: #febd69;
   border-top-right-radius: 2px;
 }
-#nav-cart-count{
+
+#nav-cart-count {
   background-color: red;
   color: #fff;
   border-radius: 50%;
