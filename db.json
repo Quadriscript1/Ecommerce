@@ -153,6 +153,14 @@
       "password": "Pa$$w0rd!",
       "confirmPassword": "Pa$$w0rd!",
       "id": 4
+    },
+    {
+      "email": "jamiu@gmail.com",
+      "firstName": "jamiu",
+      "lastName": "Bulala",
+      "password": "12345678",
+      "confirmPassword": "12345678",
+      "id": 5
     }
   ],
   "user": [
@@ -194,33 +202,13 @@
     },
     {
       "userId": 58,
-      "categoryId": 5,
-      "description": "Custom Design Hawaiian Shirts Hawaiian Shirt with Your Face with Flower",
+      "categoryId": 3,
+      "description": "2022 Men Casual Classic Running Sneakers - White",
       "quantity": 1,
-      "name": "Nostrum nostrum duis",
-      "imageURL": "https://customyoulike.com/cdn/shop/products/CCH11-01-01_1_1296x1296.png?v=1652079015",
-      "price": 580,
-      "id": 2
-    },
-    {
-      "userId": 58,
-      "categoryId": 5,
-      "description": "KITON GREEN SHIRT - SLIM",
-      "quantity": 1,
-      "name": "KITON ",
-      "imageURL": "https://www.shopthefinest.com/cdn/shop/products/KT-M-UCID-H5251-08-EE-R1-2_medium.jpg?v=1661865090",
-      "price": 720,
-      "id": 3
-    },
-    {
-      "userId": 58,
-      "categoryId": 4,
-      "description": "Luxury Black Full Metal Digital Lava Wrist Watch- Unisex",
-      "quantity": 3,
-      "name": " Metal Digital Lava",
-      "imageURL": "https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/14/761224/1.jpg?0875",
-      "price": 70,
-      "id": 4
+      "name": "Sneakers",
+      "imageURL": "https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/93/763176/1.jpg?8276",
+      "price": 100,
+      "id": 5
     }
   ],
   "wishlist": [

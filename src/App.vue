@@ -70,6 +70,9 @@ export default {
     this.fetchData();
     this.getCart();
     this.auth_info = JSON.parse(localStorage.getItem('authUser'));
+    console.log(this.products);
+    console.log(this.categories);
+
 
   }
 }
