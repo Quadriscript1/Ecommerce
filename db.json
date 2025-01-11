@@ -53,6 +53,12 @@
       "imageURL": "https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/16/3854642/1.jpg?0708",
       "description": "Asus Vivobook 14 - Intel Celeron - 4GB/256GB SSD - Win 11 - Blue",
       "id": 9
+    },
+    {
+      "categoryName": "Brendan Mcdaniel",
+      "imageURL": "https://lacite-html.vercel.app/img/img-4.jpg",
+      "description": "Sapiente quas eum et Keiko Bird",
+      "id": 10
     }
   ],
   "products": [
@@ -84,7 +90,7 @@
       "categoryId": 5,
       "description": "KITON GREEN SHIRT - SLIM",
       "name": "KITON ",
-      "imageURL": "https://www.shopthefinest.com/cdn/shop/products/KT-M-UCID-H5251-08-EE-R1-2_medium.jpg?v=1661865090",
+      "imageURL": "https://lacite-html.vercel.app/img/img-4.jpg",
       "price": 720,
       "id": 4
     },
@@ -106,8 +112,8 @@
     },
     {
       "categoryId": 8,
-      "description": "Quis deserunt porro ",
-      "name": "Accusantium soluta c",
+      "description": "Quis deserunt porro Latest Iphone 15Latest Iphone 15",
+      "name": "Latest Iphone 15",
       "imageURL": "https://ng.jumia.is/cms/0-1-homepage/0-0-freelinks-gray/300x240/phones-tablets_300x240.png",
       "price": 400,
       "id": 7
@@ -119,6 +125,30 @@
       "imageURL": "https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/61/414717/1.jpg?2241",
       "price": 425,
       "id": 8
+    },
+    {
+      "categoryId": 4,
+      "description": "Quam culpa sint in ",
+      "name": "Et ipsa magnam dolo",
+      "imageURL": "https://lacite-html.vercel.app/img/img-4.jpg",
+      "price": 54,
+      "id": 9
+    },
+    {
+      "categoryId": 7,
+      "description": "Delectus laboris as Nisi sed fuga Quos Tempora pariatur Re",
+      "name": "Sample",
+      "imageURL": "https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/27/1426193/1.jpg?0811",
+      "price": 730,
+      "id": 10
+    },
+    {
+      "categoryId": 8,
+      "description": "Numquam sed cumque s",
+      "name": "Et ab dolorem ut eum",
+      "imageURL": "https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/62/7147342/1.jpg?1885",
+      "price": 99,
+      "id": 11
     }
   ],
   "signup": [
@@ -161,6 +191,22 @@
       "password": "12345678",
       "confirmPassword": "12345678",
       "id": 5
+    },
+    {
+      "email": "soburatdamilola2024@gmail.com",
+      "firstName": "Bakre",
+      "lastName": "Soburat",
+      "password": "12345",
+      "confirmPassword": "12345",
+      "id": 6
+    },
+    {
+      "email": "soburatdamilola2024@gmail.com",
+      "firstName": "Bakre",
+      "lastName": "Soburat",
+      "password": "1234",
+      "confirmPassword": "1234",
+      "id": 7
     }
   ],
   "user": [
@@ -209,6 +255,36 @@
       "imageURL": "https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/93/763176/1.jpg?8276",
       "price": 100,
       "id": 5
+    },
+    {
+      "userId": 16,
+      "categoryId": 4,
+      "description": "Digital Watch - LED Watch - Electronic Sports Watch",
+      "quantity": 1,
+      "name": "Apple LED Watch",
+      "imageURL": "https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/61/414717/1.jpg?2241",
+      "price": 425,
+      "id": 6
+    },
+    {
+      "userId": 16,
+      "categoryId": 4,
+      "description": "Luxury Black Full Metal Digital Lava Wrist Watch- Unisex",
+      "quantity": 1,
+      "name": " Metal Digital Lava",
+      "imageURL": "https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/14/761224/1.jpg?0875",
+      "price": 70,
+      "id": 7
+    },
+    {
+      "userId": 16,
+      "categoryId": 4,
+      "description": "Luxury Black Full Metal Digital Lava Wrist Watch- Unisex",
+      "quantity": -1,
+      "name": " Metal Digital Lava",
+      "imageURL": "https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/14/761224/1.jpg?0875",
+      "price": 70,
+      "id": 8
     }
   ],
   "wishlist": [
